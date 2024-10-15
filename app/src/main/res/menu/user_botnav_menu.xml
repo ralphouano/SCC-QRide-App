@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_userhome"
+        android:icon="@drawable/ic_home"
+        android:title="@string/navlabel_home" />
+
+    <item
+        android:id="@+id/nav_sendtoken"
+        android:icon="@drawable/ic_sendtoken"
+        android:title="@string/navlabel_scanqr" />
+
+    <item
+        android:id="@+id/nav_userbusticket"
+        android:icon="@drawable/ic_qrticket"
+        android:title="@string/navlabel_busticket" />
+
+    <item
+        android:id="@+id/nav_userscanqr"
+        android:icon="@drawable/ic_scanqr"
+        android:title="@string/navlabel_history" />
+
+    <item
+        android:id="@+id/nav_userhistory"
+        android:icon="@drawable/ic_history"
+        android:title="@string/navlabel_history" />
+
+
+
+</menu>

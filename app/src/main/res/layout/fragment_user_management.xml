@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".UserManagement">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/img_profile"
+            android:id="@+id/profileImg"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:text="@string/user_name"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/fontcolor"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/linearLayout2"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208"
+        tools:ignore="MissingConstraints" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/searchUser"
+        android:layout_below="@id/divider"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollList"
+        android:layout_below="@id/searchUser"
+        android:layout_marginTop="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardViewList"
+            android:layout_below="@id/searchUser"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.65"
+            tools:ignore="MissingConstraints">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="65dp"
+                        android:gravity="center|center_horizontal"
+                        android:paddingHorizontal="10dp"
+                        android:text="Employee ID"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="65dp"
+                        android:gravity="center|center_horizontal"
+                        android:paddingHorizontal="5dp"
+                        android:text="Name"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="65dp"
+                        android:gravity="center|center_horizontal"
+                        android:paddingHorizontal="5dp"
+                        android:text="Account Type"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#c1c1c1">
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#c1c1c1">
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#c1c1c1">
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#c1c1c1">
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                    <TextView android:layout_height="50dp" />
+
+                </TableRow>
+            </TableLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button3"
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cornerRadius="10dp"
+                    android:text="Add Account" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button4"
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    app:cornerRadius="10dp"
+                    android:text="View Users" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
